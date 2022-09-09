@@ -30,8 +30,8 @@ public class TestSenderData {
 	@Test
 	public void givenBatteryParamexpectspropercount() {
 		SenderService sender = new SenderServiceImpl();
-		int validateSize = 14;
-		assertEquals(sender.receiveReadingsFromBattery(14).size(), validateSize);
+		int validateSize = 50;
+		assertEquals(sender.receiveReadingsFromBattery(50).size(), validateSize);
 		sender.sendReadingsToConsole();
 	}
 
