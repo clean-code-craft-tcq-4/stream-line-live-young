@@ -12,7 +12,7 @@ public class InputSender {
 		Date date = new Date();
 		log.setMessage("Provide Data Range to read streams Range value of max 10");
 		try {
-			String noofEntries = "10";
+			String noofEntries = "50";
 			if (SenderData.checkNumeric(noofEntries) && SenderData.validateDataSize(noofEntries)) {
 				log.setMessage("----------------" + dateFormat.format(date) + "----------------------------");
 				log.setMessage("Input Data Size: " + noofEntries);
